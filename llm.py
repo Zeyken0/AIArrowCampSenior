@@ -22,12 +22,46 @@ class GigaChatInterface(LLMObject):
         )
 
     def project_struct(self, content: str) -> str:
-        return ''
+        system_message = SystemMessage(
+            content="Ты — эксперт по структуризации информации о проектах Структурируй информацию,"
+                    " не добавляй ничего лишнего"
+        )
+
+        specifier_prompt = [
+            system_message,
+            HumanMessage(
+                content=f"""{content}"""
+            ),
+        ]
+        result = self._model(specifier_prompt).content
+        return result
 
     def idea_struct(self, content: str) -> str:
-        return ''
+        system_message = SystemMessage(
+            content="Ты — эксперт по структуризации информации о идеях Структурируй информацию,"
+                    " не добавляй ничего лишнего"
+        )
+
+        specifier_prompt = [
+            system_message,
+            HumanMessage(
+                content=f"""{content}"""
+            ),
+        ]
+        result = self._model(specifier_prompt).content
+        return result
 
     def task_struct(self, content: str) -> str:
-        return ''
+        system_message = SystemMessage(
+            content="Ты — эксперт по структуризации информации о задачах. Структурируй информацию,"
+                    " не добавляй ничего лишнего"
+        )
 
-
+        specifier_prompt = [
+            system_message,
+            HumanMessage(
+                content=f"""{content}"""
+            ),
+        ]
+        result = self._model(specifier_prompt).content
+        return result
