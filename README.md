@@ -21,4 +21,4 @@ bot_token is a telegram bot token.
 To start run main.py.
 
 ## Links
-AI Arrow - https://ai-arrow-camp.com/?ysclid=lz7y3jbnpq218932882
+AI Arrow - https://ai-arrow-camp.com/
