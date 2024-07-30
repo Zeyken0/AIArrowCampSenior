@@ -19,6 +19,7 @@ class GigaChatInterface(LLMObject):
         self._model = GigaChat(
             model='GigaChat',
             credentials=GIGACHAT_CREDENTIALS,
+            verify_ssl_certs=False
         )
 
     def project_struct(self, content: str) -> str:
