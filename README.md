@@ -17,6 +17,7 @@ BOT_TOKEN = (...)
 ```
 Where gigachat_credentials is gigachat LLM authorization data,
 bot_token is a telegram bot token.
+
 To start run main.py.
 
 ## Links
