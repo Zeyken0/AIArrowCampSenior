@@ -20,5 +20,12 @@ bot_token is a telegram bot token.
 
 To start run main.py.
 
+## Feature plans
+1. Develop new system for task-management:
+   ![Task management](https://github.com/user-attachments/assets/320ddc12-96ae-4649-8b73-59460c1fb0cb);
+2. Develop idea searcher via yandex search;
+3. Develop a system for selecting several options from among those offered in project info briefer.
+
+
 ## Links
 AI Arrow - https://ai-arrow-camp.com/
